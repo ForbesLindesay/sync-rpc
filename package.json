@@ -20,8 +20,8 @@
     "precommit": "lint-staged",
     "prettier": "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --write \"src/**/*.js\"",
     "prettier:check": "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --list-different \"src/**/*.js\"",
-    "test": "jest ./lib --coverage",
-    "watch": "jest ./lib --coverage --watch"
+    "test": "jest \"./lib\" --coverage",
+    "watch": "jest \"./lib\" --coverage --watch"
   },
   "lint-staged": {
     "*.js": [
