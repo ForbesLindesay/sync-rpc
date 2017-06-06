@@ -1,5 +1,7 @@
 # sync-rpc
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/sync-rpc.svg)](https://greenkeeper.io/)
+
 Run asynchronous commands synchronously by putting them in a separate process
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/sync-rpc/master.svg)](https://travis-ci.org/ForbesLindesay/sync-rpc)
