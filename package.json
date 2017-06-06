@@ -1,0 +1,41 @@
+{
+  "name": "sync-rpc",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "description": "Run asynchronous commands synchronously by putting them in a separate process",
+  "keywords": [],
+  "files": [
+    "lib/"
+  ],
+  "dependencies": {
+    "get-port": "^3.1.0"
+  },
+  "devDependencies": {
+    "husky": "*",
+    "jest": "*",
+    "lint-staged": "*",
+    "prettier": "*"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "prettier": "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --write \"src/**/*.js\"",
+    "prettier:check": "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --list-different \"src/**/*.js\"",
+    "test": "jest ./lib --coverage",
+    "watch": "jest ./lib --coverage --watch"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/sync-rpc.git"
+  },
+  "author": {
+    "name": "Forbes Lindesay",
+    "url": "http://github.com/ForbesLindesay"
+  },
+  "license": "MIT"
+}
