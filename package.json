@@ -19,7 +19,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "prettier": "prettier --write \"lib/**/*.js\"",
-    "prettier:check": "prettier--list-different \"lib/**/*.js\"",
+    "prettier:check": "prettier --list-different \"lib/**/*.js\"",
     "test": "jest --coverage",
     "watch": "jest --coverage --watch"
   },
