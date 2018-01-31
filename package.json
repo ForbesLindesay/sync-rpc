@@ -1,6 +1,6 @@
 {
   "name": "sync-rpc",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "lib/index.js",
   "description": "Run asynchronous commands synchronously by putting them in a separate process",
   "keywords": [],
