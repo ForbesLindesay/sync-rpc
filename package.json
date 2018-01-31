@@ -18,14 +18,14 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "prettier": "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --write \"lib/**/*.js\"",
-    "prettier:check": "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --list-different \"lib/**/*.js\"",
+    "prettier": "prettier --write \"lib/**/*.js\"",
+    "prettier:check": "prettier--list-different \"lib/**/*.js\"",
     "test": "jest --coverage",
     "watch": "jest --coverage --watch"
   },
   "lint-staged": {
     "*.js": [
-      "prettier --single-quote --trailing-comma es5 --no-bracket-spacing --write",
+      "prettier --write",
       "git add"
     ]
   },
